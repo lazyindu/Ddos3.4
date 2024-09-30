@@ -1,13 +1,13 @@
 import base64
 import telebot
 # Initialize the bot with your token
-bot = telebot.TeleBot('6045043208:AAFSpU6PZBBeIfo0nj6r8jC1w7wVxSfCTlE')
+bot = telebot.TeleBot('5942641741:AAFZhB9k68JhzraZGMXNtoxVIVApY-qQPh0')
 
 # First, delete any existing webhook
-bot.remove_webhook()
+# bot.remove_webhook()
 
 # Now start polling
-bot.polling()
+# bot.polling()
 
 def xor_encrypt_decrypt(data, key):
     return ''.join(chr(ord(c) ^ ord(k)) for c, k in zip(data, key * (len(data) // len(key) + 1)))
